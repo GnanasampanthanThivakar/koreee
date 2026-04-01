@@ -1909,7 +1909,7 @@ section:not(.hero):not(.footer) {
   width: 100%;
   padding: 14px 20px;
   padding-right: 50px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   border: none;
   background: #ffffff;
   color: #111111;
@@ -1923,7 +1923,7 @@ section:not(.hero):not(.footer) {
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  color: var(--color-accent-dark);
+  color: var(--color-accent);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -2185,10 +2185,32 @@ section:not(.hero):not(.footer) {
     text-align: center;
   }
 
+  .benefit-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .benefit-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
   .benefit-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .pricing-amount {
+    font-size: 3rem;
+  }
+  
+  .pricing-period {
+    font-size: 1.8rem;
+  }
+  
+  .register-form-wrapper {
+    padding: 24px 20px;
   }
 
 
@@ -2221,7 +2243,14 @@ section:not(.hero):not(.footer) {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+
+  .footer-brand,
+  .footer-newsletter {
+    grid-column: span 2;
   }
 
   .footer-bottom .container {
@@ -2252,11 +2281,8 @@ section:not(.hero):not(.footer) {
 
   .hero-buttons .btn-primary,
   .hero-buttons .btn-outline,
-  .pricing-card .btn-primary,
-  .pricing-card .btn-outline,
   .about-buttons .btn-primary,
-  .join-cta .btn-primary,
-  .register-form .btn-primary {
+  .join-cta .btn-primary {
     width: 100%;
     justify-content: center;
     padding: 18px 24px;
