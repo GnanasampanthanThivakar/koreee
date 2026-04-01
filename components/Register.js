@@ -60,7 +60,7 @@ export default function Register() {
           <div className="register-info reveal-left">
             <span className="section-label">Register</span>
             <h2 className="section-title">
-              Join the Kore<br />Community Today
+              JOIN THE KORE<br />COMMUNITY TODAY
             </h2>
             <p className="register-text">
               Ready to start your Kore journey? Fill out the form and we&apos;ll
@@ -97,7 +97,7 @@ export default function Register() {
             {!submitted ? (
               <form onSubmit={handleSubmit} noValidate>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="reg-name">Full Name</label>
+                  <label className="form-label" htmlFor="reg-name">FULL NAME</label>
                   <input
                     id="reg-name"
                     type="text"
@@ -112,7 +112,7 @@ export default function Register() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="reg-email">Email Address</label>
+                  <label className="form-label" htmlFor="reg-email">EMAIL ADDRESS</label>
                   <input
                     id="reg-email"
                     type="email"
@@ -127,7 +127,7 @@ export default function Register() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="reg-phone">Phone Number</label>
+                  <label className="form-label" htmlFor="reg-phone">PHONE NUMBER</label>
                   <input
                     id="reg-phone"
                     type="tel"
@@ -142,7 +142,7 @@ export default function Register() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="reg-package">Select Package / Event</label>
+                  <label className="form-label" htmlFor="reg-package">SELECT PACKAGE / EVENT</label>
                   <select
                     id="reg-package"
                     className="form-select"
@@ -164,7 +164,7 @@ export default function Register() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="reg-message">Message (Optional)</label>
+                  <label className="form-label" htmlFor="reg-message">MESSAGE (OPTIONAL)</label>
                   <textarea
                     id="reg-message"
                     className="form-textarea"
@@ -192,8 +192,8 @@ export default function Register() {
                   )}
                 </div>
 
-                <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                  Submit Registration <span className="btn-arrow"><ArrowUpRight /></span>
+                <button type="submit" className="btn-primary submit-btn">
+                  SUBMIT REGISTRATION <span className="btn-arrow"><ArrowUpRight /></span>
                 </button>
               </form>
             ) : (
