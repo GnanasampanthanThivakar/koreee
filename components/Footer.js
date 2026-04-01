@@ -94,7 +94,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <p className="footer-credit">
-            Kore Sports Club & Training Academy Template
+            Kore Sports Club & Training Academy 
           </p>
           <p className="footer-copyright">
             Copyright © {new Date().getFullYear()} All rights reserved.

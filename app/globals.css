@@ -1924,7 +1924,18 @@ section:not(.hero):not(.footer) {
 @media (max-width: 768px) {
   :root {
     --section-padding: 60px 0;
-    --container-padding: 0 20px;
+    --container-padding: 0 16px;
+    --radius-xl: 24px;
+    --radius-lg: 16px;
+  }
+
+  .hero, .footer, .join-cta {
+    margin: 12px;
+    border-radius: var(--radius-xl);
+  }
+
+  .hero-bg, .join-cta-bg {
+    border-radius: var(--radius-xl);
   }
 
   .nav-links {
@@ -2076,7 +2087,12 @@ section:not(.hero):not(.footer) {
   }
 
   .hero-buttons .btn-primary,
-  .hero-buttons .btn-outline {
+  .hero-buttons .btn-outline,
+  .pricing-card .btn-primary,
+  .pricing-card .btn-outline,
+  .about-buttons .btn-primary,
+  .join-cta .btn-primary,
+  .register-form .btn-primary {
     width: 100%;
     justify-content: center;
     padding: 18px 24px;

@@ -6,8 +6,8 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-bg">
         <Image
-          src="/images/hero-bg.png"
-          alt="Kore athletes powering through a group resistance training session"
+          src="/images/hero-premium.png"
+          alt="Kore athletes in a cinematically lit sports centre"
           fill
           priority
           style={{ objectFit: 'cover' }}
